@@ -210,7 +210,7 @@ sudo rpl --encoding UTF-8 'queries for client' 'Anfragen für Gerät' /var/www/h
 sudo rpl --encoding UTF-8 'queries for domain' 'Anfragen für die Domain' /var/www/html/admin/queries.php
 sudo rpl --encoding UTF-8 'queries within specified time interval' 'Abfragen innerhalb des angegebenen Zeitintervalls' /var/www/html/admin/queries.php
 sudo rpl --encoding UTF-8 'up to 100 queries' 'bis zu 100 Anfragen' /var/www/html/admin/queries.php
-sudo rpl --encoding UTF-8 '<a href=\"\?all\">show all</a>' ' oder <a href=\"?all\">zeige alle Anfragen</a>' /var/www/html/admin/queries.php
+sudo rpl --encoding UTF-8 '<a href=\\"\?all\\">show all</a>' ' oder <a href=\"?all\">zeige alle Anfragen</a>' /var/www/html/admin/queries.php
 sudo rpl --encoding UTF-8 'Type / Domain / Client' 'Typ / Domain / Gerät' /var/www/html/admin/scripts/pi-hole/js/queries.js
 sudo rpl --encoding UTF-8 '"Search:"' '"Suche:"' /var/www/html/admin/scripts/vendor/datatables.min.js
 sudo rpl --encoding UTF-8 '"Show _MENU_ entries"' '"Zeige _MENU_ Einträge"' /var/www/html/admin/scripts/vendor/datatables.min.js
@@ -301,9 +301,9 @@ sudo rpl --encoding UTF-8 'Clear filters' 'Filter löschen' /var/www/html/admin/
 sudo rpl --encoding UTF-8 'Compute graphical statistics from the Pi-hole query database' 'Grafische Statistiken der Pi-hole Anfragedatenbank' /var/www/html/admin/db_graph.php
 sudo rpl --encoding UTF-8 'Select date and time range' 'Datum- und Zeitbereich auswählen' /var/www/html/admin/db_graph.php
 sudo rpl --encoding UTF-8 'Click to select date and time range' 'Klicken Sie hier zum Auswählen des Datum- und Zeitbereichs' /var/www/html/admin/db_graph.php
-sudo rpl --encoding UTF-8 'Today: [moment\(\).startOf\("day"\)' 'Heute: [moment().startOf("day")' /var/www/html/admin/scripts/pi-hole/js/db_graph.js
-sudo rpl --encoding UTF-8 'Yesterday: [' 'Gestern: [' /var/www/html/admin/scripts/pi-hole/js/db_graph.js
-sudo rpl --encoding UTF-8 'Last 7 Days": ' 'Letzten 7 Tage": ' /var/www/html/admin/scripts/pi-hole/js/db_graph.js
+sudo rpl --encoding UTF-8 'Today: \[moment\(\).startOf\("day"\)' 'Heute: [moment().startOf("day")' /var/www/html/admin/scripts/pi-hole/js/db_graph.js
+sudo rpl --encoding UTF-8 'Yesterday: \[' 'Gestern: [' /var/www/html/admin/scripts/pi-hole/js/db_graph.js
+sudo rpl --encoding UTF-8 'Last 7 Days\": ' 'Letzten 7 Tage": ' /var/www/html/admin/scripts/pi-hole/js/db_graph.js
 sudo rpl --encoding UTF-8 'Last 30 Days": ' 'Letzten 30 Tage": ' /var/www/html/admin/scripts/pi-hole/js/db_graph.js
 sudo rpl --encoding UTF-8 'This Month": ' 'Dieser Monat": ' /var/www/html/admin/scripts/pi-hole/js/db_graph.js
 sudo rpl --encoding UTF-8 'Last Month": ' 'Letzter Monat": ' /var/www/html/admin/scripts/pi-hole/js/db_graph.js
@@ -334,8 +334,8 @@ sudo rpl --encoding UTF-8 'Select date and time range' 'Datum- und Zeitbereich a
 sudo rpl --encoding UTF-8 'New options selected. Please reload the data or choose another time range.</span>' 'Neue Optionen ausgewählt. Bitte laden Sie die Daten neu oder wählen Sie einen anderen Zeitraum.</span>' /var/www/html/admin/db_queries.php
 sudo rpl --encoding UTF-8 'Reload Data</button>' 'Daten neu laden</button>' /var/www/html/admin/db_queries.php
 sudo rpl --encoding UTF-8 'Click to select date and time range' 'Klicken Sie zum Auswählen des Datum- und Zeitbereichs' /var/www/html/admin/db_queries.php
-sudo rpl --encoding UTF-8 'Today: [moment\(\).startOf\("day"' 'Heute: [moment().startOf("day"' /var/www/html/admin/scripts/pi-hole/js/db_queries.js
-sudo rpl --encoding UTF-8 'Yesterday: [' 'Gestern: [' /var/www/html/admin/scripts/pi-hole/js/db_queries.js
+sudo rpl --encoding UTF-8 'Today: \[moment\(\).startOf\("day"' 'Heute: [moment().startOf("day"' /var/www/html/admin/scripts/pi-hole/js/db_queries.js
+sudo rpl --encoding UTF-8 'Yesterday: \[' 'Gestern: [' /var/www/html/admin/scripts/pi-hole/js/db_queries.js
 sudo rpl --encoding UTF-8 'Last 7 Days": ' 'Letzten 7 Tage": ' /var/www/html/admin/scripts/pi-hole/js/db_queries.js
 sudo rpl --encoding UTF-8 'Last 30 Days": ' 'Letzten 30 Tage": ' /var/www/html/admin/scripts/pi-hole/js/db_queries.js
 sudo rpl --encoding UTF-8 'This Month": ' 'Dieser Monat": ' /var/www/html/admin/scripts/pi-hole/js/db_queries.js
@@ -379,8 +379,8 @@ sudo rpl --encoding UTF-8 'Close</button>' 'Schließen</button>' /var/www/html/a
 sudo rpl --encoding UTF-8 'Compute Top Lists from the Pi-hole query database' 'Top Listen aus der Pi-hole-Anfragedatenbank berechnen' /var/www/html/admin/db_lists.php
 sudo rpl --encoding UTF-8 'Select date and time range' 'Datum- und Zeitbereich auswählen' /var/www/html/admin/db_lists.php
 sudo rpl --encoding UTF-8 'Click to select date and time range' 'Klicken Sie zum Auswählen des Datum- und Zeitbereichs' /var/www/html/admin/db_lists.php
-sudo rpl --encoding UTF-8 'Today: [' 'Heute: [' /var/www/html/admin/scripts/pi-hole/js/db_lists.js
-sudo rpl --encoding UTF-8 'Yesterday: [' 'Gestern: [' /var/www/html/admin/scripts/pi-hole/js/db_lists.js
+sudo rpl --encoding UTF-8 'Today: \[' 'Heute: [' /var/www/html/admin/scripts/pi-hole/js/db_lists.js
+sudo rpl --encoding UTF-8 'Yesterday: \[' 'Gestern: [' /var/www/html/admin/scripts/pi-hole/js/db_lists.js
 sudo rpl --encoding UTF-8 'Last 7 Days": ' 'Letzten 7 Tage": ' /var/www/html/admin/scripts/pi-hole/js/db_lists.js
 sudo rpl --encoding UTF-8 'Last 30 Days": ' 'Letzten 30 Tage": ' /var/www/html/admin/scripts/pi-hole/js/db_lists.js
 sudo rpl --encoding UTF-8 'This Month": ' 'Dieser Monat": ' /var/www/html/admin/scripts/pi-hole/js/db_lists.js
@@ -410,7 +410,7 @@ sudo rpl --encoding UTF-8 'Add domain as wildcard' 'Domain als Platzhalter hinzu
 sudo rpl --encoding UTF-8 'Check this box if you want to involve all subdomains. The entered domain will be converted to a RegEx filter while adding.' 'Markieren Sie dieses Feld, wenn Sie alle Unterdomänen einbeziehen möchten. Die eingegebene Domäne wird beim Hinzufügen in einen RegEx-Filter umgewandelt.' /var/www/html/admin/groups-domains.php
 sudo rpl --encoding UTF-8 'Add to Whitelist</button>' 'Zur Whitelist hinzufügen</button>' /var/www/html/admin/groups-domains.php
 sudo rpl --encoding UTF-8 'utils.showAlert\("warning", "", "Warning", "Please specify a " \+ domainRegex\)' 'utils.showAlert("warning", "", "Achtung!", "Bitte geben Sie eine Domain ein!")' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
-sudo rpl --encoding UTF-8 'utils.showAlert("info", "", "Adding " \+ domainRegex \+ "...", domain\);' 'utils.showAlert("info", "", "Füge die Domain hinzu ...", domain);' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
+sudo rpl --encoding UTF-8 'utils.showAlert\("info", "", "Adding " \+ domainRegex \+ "...", domain\);' 'utils.showAlert("info", "", "Füge die Domain hinzu ...", domain);' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
 sudo rpl --encoding UTF-8 'utils.showAlert\("success", "fas fa-plus", "Success!", response.message\);' 'utils.showAlert("success", "fas fa-plus", "Domain erfolgreich hinzugefügt!", response.message);' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
 sudo rpl --encoding UTF-8 '"Not adding ". htmlentities\(utf8_encode\(\$domain\)\) . " as it is already on the list"' '"Nicht hinzugefügt, da der Eintrag ". htmlentities(utf8_encode($domain)) . " bereits in der Liste enthalten ist."' /var/www/html/admin/scripts/pi-hole/php/groups.php
 sudo rpl --encoding UTF-8 '<strong>Error, something went wrong!</strong>' '<strong>Fehler, etwas ist schief gelaufen!</strong>' /var/www/html/admin/scripts/pi-hole/js/utils.js
@@ -498,7 +498,7 @@ sudo rpl --encoding UTF-8 '<p>Note that client recognition by IP addresses \(inc
 sudo rpl --encoding UTF-8 'the two latter will only be available after some time.' 'der Schnittstellenerkennung vorgezogen wird, da die beiden letzteren erst nach einiger Zeit verfügbar sind. Außerdem ' /var/www/html/admin/groups-clients.php
 sudo rpl --encoding UTF-8 'Furthermore, MAC address recognition only works for devices at most one networking hop away from your Pi-hole.</p>' 'funktioniert die MAC-Adressenerkennung nur für Geräte, die höchstens einen Netzwerksprung von Ihrem Pi-hole entfernt sind.</p>' /var/www/html/admin/groups-clients.php
 sudo rpl --encoding UTF-8 '>Client</th>' '>Gerät</th>' /var/www/html/admin/groups-clients.php
-sudo rpl --encoding UTF-8 'Acceptable values are: IP address, subnet \(CIDR notation\), MAC address \(AA:BB:CC:DD:EE:FF format) or host names.' 'Akzeptable Werte sind: IP-Adresse, Subnetz (CIDR-Notation), MAC-Adresse (Format AA:BB:CC:DD:DD:EE:FF) oder Hostnamen.' /var/www/html/admin/groups-clients.php
+sudo rpl --encoding UTF-8 'Acceptable values are: IP address, subnet \(CIDR notation\), MAC address \(AA:BB:CC:DD:EE:FF format\) or host names.' 'Akzeptable Werte sind: IP-Adresse, Subnetz (CIDR-Notation), MAC-Adresse (Format AA:BB:CC:DD:DD:EE:FF) oder Hostnamen.' /var/www/html/admin/groups-clients.php
 sudo rpl --encoding UTF-8 '>Add</button>' '>Hinzufügen</button>' /var/www/html/admin/groups-clients.php
 sudo rpl --encoding UTF-8 '"Warning", "Please specify a client IP or MAC address"' '"Achtung!", "Bitte geben Sie eine Geräte IP- oder MAC-Adresse an!"' /var/www/html/admin/scripts/pi-hole/js/groups-clients.js
 sudo rpl --encoding UTF-8 'Adding client...' 'Füge Gerät hinzu ...' /var/www/html/admin/scripts/pi-hole/js/groups-clients.js
@@ -532,8 +532,8 @@ sudo rpl --encoding UTF-8 'on: "Enabled"' 'on: "Aktiviert"' /var/www/html/admin/
 sudo rpl --encoding UTF-8 'off: "Disabled"' 'off: "Deaktiviert"' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
 sudo rpl --encoding UTF-8 'Apply</button>' 'Anwenden</button>' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
 sudo rpl --encoding UTF-8 'return "All selected \(" \+ num \+ "\)";' 'return "Alle ausgewählt (" + num + ")";' /var/www/html/admin/scripts/pi-hole/js/utils.js
-sudo rpl --encoding UTF-8 'return num \+ " selected"' 'return num \+ " ausgewählt"' /var/www/html/admin/scripts/pi-hole/js/utils.js
-sudo rpl --encoding UTF-8 'utils.showAlert\("info", "", "Deleting " \+ domainRegex \+ "...", domain\)' 'utils.showAlert("info", "", "Lösche die Domain ...", domain)' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
+sudo rpl --encoding UTF-8 'return num \+ \" selected\"' 'return num + " ausgewählt"' /var/www/html/admin/scripts/pi-hole/js/utils.js
+sudo rpl --encoding UTF-8 'utils.showAlert\(\"info\", \"\", \"Deleting \" \+ domainRegex \+ \"...\", domain\)' 'utils.showAlert("info", "", "Lösche die Domain ...", domain)' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
 sudo rpl --encoding UTF-8 '"Successfully deleted " \+ domainRegex,' '"Domain erfolgreich gelöscht!" ,' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
 sudo rpl --encoding UTF-8 'Reset sorting</button>' 'Sortierung zurücksetzen</button>' /var/www/html/admin/groups-domains.php
 
@@ -918,10 +918,10 @@ sudo rpl --encoding UTF-8 'A new static address has been added' 'Eine neue stati
 sudo rpl --encoding UTF-8 'IP \(".htmlspecialchars\(\$IP\)."\) is invalid!<br>' 'Die IP (".htmlspecialchars($IP).") ist ungültig!<br>' /var/www/html/admin/scripts/pi-hole/php/savesettings.php
 sudo rpl --encoding UTF-8 'Port \(".htmlspecialchars\(\$port\)."\) is invalid!<br>' 'Der Port (".htmlspecialchars($port).") ist ungültig!<br>' /var/www/html/admin/scripts/pi-hole/php/savesettings.php
 sudo rpl --encoding UTF-8 'No DNS server has been selected.<br>' 'Es wurde kein DNS Server ausgewählt.<br>' /var/www/html/admin/scripts/pi-hole/php/savesettings.php
-sudo rpl --encoding UTF-8 'Conditional forwarding subnet \(\"".htmlspecialchars\(\$cidr\)."\"\) is invalid!<br>' 'Das Subnetz (\"".htmlspecialchars($cidr)."\") für die bedingte Weiterleitung ist ungültig!<br>' /var/www/html/admin/scripts/pi-hole/php/savesettings.php
+sudo rpl --encoding UTF-8 'Conditional forwarding subnet \(\\"".htmlspecialchars\(\$cidr\)."\\"\) is invalid!<br>' 'Das Subnetz (\"".htmlspecialchars($cidr)."\") für die bedingte Weiterleitung ist ungültig!<br>' /var/www/html/admin/scripts/pi-hole/php/savesettings.php
 sudo rpl --encoding UTF-8 'This field requires CIDR notation for local subnets \(e.g., 192.168.0.0/16\).<br>' 'Dieses Feld erfordert eine CIDR Notation für das lokale Subnetz (z.B. 192.168.0.0/16).<br>' /var/www/html/admin/scripts/pi-hole/php/savesettings.php
-sudo rpl --encoding UTF-8 'Conditional forwarding domain name \(\"".htmlspecialchars\(\$domain\)."\"\) is invalid!<br>' 'Der Domainname (\"".htmlspecialchars($domain)."\") für die bedingte Weiterleitung ist ungültig!<br>' /var/www/html/admin/scripts/pi-hole/php/savesettings.php
-sudo rpl --encoding UTF-8 'Conditional forwarding target IP \(\"".htmlspecialchars\(\$target\)."\"\) is invalid!<br>' 'Die Ziel-IP (\"".htmlspecialchars($target)."\") für die bedingte Weiterleitung ist ungültig!<br>' /var/www/html/admin/scripts/pi-hole/php/savesettings.php
+sudo rpl --encoding UTF-8 'Conditional forwarding domain name \(\\"".htmlspecialchars\(\$domain\)."\\"\) is invalid!<br>' 'Der Domainname (\"".htmlspecialchars($domain)."\") für die bedingte Weiterleitung ist ungültig!<br>' /var/www/html/admin/scripts/pi-hole/php/savesettings.php
+sudo rpl --encoding UTF-8 'Conditional forwarding target IP \(\\"".htmlspecialchars\(\$target\)."\\"\) is invalid!<br>' 'Die Ziel-IP (\"".htmlspecialchars($target)."\") für die bedingte Weiterleitung ist ungültig!<br>' /var/www/html/admin/scripts/pi-hole/php/savesettings.php
 sudo rpl --encoding UTF-8 'The settings have been reset to their previous values' 'Die Einstellungen wurden auf ihre vorherigen Werte zurückgesetzt.' /var/www/html/admin/scripts/pi-hole/php/savesettings.php
 sudo rpl --encoding UTF-8 'Logging has been disabled and logs have been flushed' 'Die Protokollierung wurde deaktiviert und die Protokolle wurden gelöscht.' /var/www/html/admin/scripts/pi-hole/php/savesettings.php
 sudo rpl --encoding UTF-8 'Top Domains/Ads entry ".htmlspecialchars\(\$domain\)." is invalid \(use only domains\)!<br>' 'Top Domain Eintrag ".htmlspecialchars($domain)." ist ungültig (nur Domains verwenden)!<br>' /var/www/html/admin/scripts/pi-hole/php/savesettings.php
