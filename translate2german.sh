@@ -81,7 +81,7 @@ sudo rpl --encoding UTF-8 'password cannot be retrieved later on, but it is poss
 sudo rpl --encoding UTF-8 'the password by setting an empty password\) using the command' '(oder das Passwort explizit zu deaktivieren, indem Sie ein leeres Passwort festlegen). Verwenden Sie hierzu:' /var/www/html/admin/scripts/pi-hole/php/loginpage.php
 sudo rpl --encoding UTF-8 'Password' 'Passwort' /var/www/html/admin/scripts/pi-hole/php/loginpage.php
 sudo rpl --encoding UTF-8 '<li><kbd>Return</kbd> &rarr; Log in and go to requested page \(<\?php echo \$scriptname; \?>\)</li>' '<li><kbd>Enter</kbd> &rarr; Anmelden (<?php echo $scriptname; ?>)</li>' /var/www/html/admin/scripts/pi-hole/php/loginpage.php
-sudo rpl --encoding UTF-8 '<li><kbd>Ctrl</kbd>+<kbd>Return</kbd> &rarr; Log in and go to Settings page</li>' '<li><kbd>Strg</kbd>+<kbd>Enter</kbd> &rarr; Anmelden und zur Einstellungsseite gehen</li>' /var/www/html/admin/scripts/pi-hole/php/loginpage.php
+sudo rpl --encoding UTF-8 '<li><kbd>Ctrl</kbd>\+<kbd>Return</kbd> &rarr; Log in and go to Settings page</li>' '<li><kbd>Strg</kbd>+<kbd>Enter</kbd> &rarr; Anmelden und zur Einstellungsseite gehen</li>' /var/www/html/admin/scripts/pi-hole/php/loginpage.php
 sudo rpl --encoding UTF-8 'Remember me for 7 days' '7 Tage merken' /var/www/html/admin/scripts/pi-hole/php/loginpage.php
 sudo rpl --encoding UTF-8 'Log in</button>' 'Anmelden</button' /var/www/html/admin/scripts/pi-hole/php/loginpage.php
 sudo rpl --encoding UTF-8 'Forgot password' 'Passwort vergessen' /var/www/html/admin/scripts/pi-hole/php/loginpage.php
@@ -106,7 +106,7 @@ sudo rpl --encoding UTF-8 'Memory usage:&nbsp;&nbsp;' 'Speicher:&nbsp;&nbsp;' /v
 
 # Statusanzeige oben rechts
 sudo rpl --encoding UTF-8 '<span class="sr-only">Toggle navigation</span>' '<span class="sr-only">Navigation umschalten</span>' /var/www/html/admin/scripts/pi-hole/php/header.php
-sudo rpl --encoding UTF-8 '"There are " + data.message_count + " warnings. Click for further details."' '"Es gibt " + data.message_count + " Warnungen. Klicken Sie für weitere Details."' /var/www/html/admin/scripts/pi-hole/js/footer.js
+sudo rpl --encoding UTF-8 '"There are " \+ data.message_count \+ " warnings. Click for further details."' '"Es gibt " + data.message_count + " Warnungen. Klicken Sie für weitere Details."' /var/www/html/admin/scripts/pi-hole/js/footer.js
 sudo rpl --encoding UTF-8 'There is one warning. Click for further details.' 'Es gibt eine Warnung. Klicken Sie für weitere Details.' /var/www/html/admin/scripts/pi-hole/js/footer.js
 sudo rpl --encoding UTF-8 'hostname:</span>' 'Rechnername:</span>' /var/www/html/admin/scripts/pi-hole/php/header.php
 sudo rpl --encoding UTF-8 'Designed For' 'Entwickelt für den' /var/www/html/admin/scripts/pi-hole/php/header.php
@@ -156,7 +156,7 @@ sudo rpl --encoding UTF-8 '<span>Documentation</span>' '<span>Hilfe</span>' /var
 # Übersicht
 sudo rpl --encoding UTF-8 '<p>Total queries' '<p>Anfragen insgesamt' /var/www/html/admin/index.php
 sudo rpl --encoding UTF-8 'clients\)</p>' 'Geräte)</p>' /var/www/html/admin/index.php
-sudo rpl --encoding UTF-8 'only A + AAAA queries \(" + data.dns_queries_all_types + " in total\)' 'nur A + AAAA Anfragen (" + data.dns_queries_all_types + " insgesamt)' /var/www//html/admin/scripts/pi-hole/js/index.js
+sudo rpl --encoding UTF-8 'only A \+ AAAA queries \(" \+ data.dns_queries_all_types \+ " in total\)' 'nur A + AAAA Anfragen (" + data.dns_queries_all_types + " insgesamt)' /var/www//html/admin/scripts/pi-hole/js/index.js
 sudo rpl --encoding UTF-8 '<p>Queries Blocked</p>' '<p>Geblockte Anfragen</p>' /var/www/html/admin/index.php
 sudo rpl --encoding UTF-8 '<p>Percentage Blocked</p>' '<p>Geblockt in Prozent</p>' /var/www/html/admin/index.php
 sudo rpl --encoding UTF-8 'Domains on Adlists' 'Domains in den Blocklisten' /var/www/html/admin/index.php
@@ -171,12 +171,12 @@ sudo rpl --encoding UTF-8 '!== "to" \?' '!== "zur" ?' /var/www/html/admin/script
 sudo rpl --encoding UTF-8 'data.domains_being_blocked = "API"' 'data.domains_being_blocked = "API"' /var/www/html/admin/scripts/pi-hole/js/index.js
 sudo rpl --encoding UTF-8 'Total queries over last ' 'Gesamtzahl der Anfragen der letzten ' /var/www/html/admin/index.php
 sudo rpl --encoding UTF-8 'hours' 'Stunden' /var/www/html/admin/index.php
-sudo rpl --encoding UTF-8 'return "Queries from " + from + " to " + to' 'return "Anfragen von " + from + " Uhr bis " + to + " Uhr"' /var/www/html/admin/scripts/pi-hole/js/index.js
+sudo rpl --encoding UTF-8 'return "Queries from " \+ from \+ " to " \+ to' 'return "Anfragen von " + from + " Uhr bis " + to + " Uhr"' /var/www/html/admin/scripts/pi-hole/js/index.js
 sudo rpl --encoding UTF-8 'Permitted DNS Queries' 'Erlaubte DNS Anfragen' /var/www/html/admin/scripts/pi-hole/js/index.js
 sudo rpl --encoding UTF-8 'Blocked DNS Queries' 'Geblockte DNS Anfragen' /var/www/html/admin/scripts/pi-hole/js/index.js
 sudo rpl --encoding UTF-8 'Client activity over last' 'Geräteaktivität der letzten ' /var/www/html/admin/index.php
-sudo rpl --encoding UTF-8 'return "Client activity from " + from + " to " + to' 'return "Geräteaktivität von " + from + " Uhr bis " + to + " Uhr"'  /var/www/html/admin/scripts/pi-hole/js/index.js
-# evtl. für Speedtest sudo rpl --encoding UTF-8 '"Upstreams from "+from+" to "+to' '"Upstream von "+from+" bis "+to' /var/www/html/admin/scripts/pi-hole/js/index.js
+sudo rpl --encoding UTF-8 'return "Client activity from " \+ from \+ " to " \+ to' 'return "Geräteaktivität von " + from + " Uhr bis " + to + " Uhr"'  /var/www/html/admin/scripts/pi-hole/js/index.js
+# evtl. für Speedtest sudo rpl --encoding UTF-8 '"Upstreams from "\+from\+" to "\+to' '"Upstream von "+from+" bis "+to' /var/www/html/admin/scripts/pi-hole/js/index.js
 sudo rpl --encoding UTF-8 '<td>No activity recorded</td>' '<td>Keine Aktivität aufgezeichnet.</td>' /var/www/html/admin/scripts/pi-hole/js/index.js
 sudo rpl --encoding UTF-8 'Query Types' 'Anfragetypen' /var/www/html/admin/index.php
 sudo rpl --encoding UTF-8 '"Query types"' '"Anfragetyp"' /var/www/html/admin/scripts/pi-hole/js/index.js
@@ -186,7 +186,7 @@ sudo rpl --encoding UTF-8 '"Forward destinations"' '"Weitergeleitete Ziele"' /va
 sudo rpl --encoding UTF-8 'Top Permitted Domains' 'Am meisten zugelassene Domains' /var/www/html/admin/index.php
 sudo rpl --encoding UTF-8 '<th>Hits</th>' '<th>Treffer</th>' /var/www/html/admin/index.php
 sudo rpl --encoding UTF-8 '<th>Frequency</th>' '<th>Häufigkeit</th>' /var/www/html/admin/index.php
-sudo rpl --encoding UTF-8 '"% of " + total' '"% von insgesamt " + total + " Treffern"' /var/www/html/admin/scripts/pi-hole/js/utils.js
+sudo rpl --encoding UTF-8 '"% of " \+ total' '"% von insgesamt " + total + " Treffern"' /var/www/html/admin/scripts/pi-hole/js/utils.js
 sudo rpl --encoding UTF-8 '% of' '% von insgesamt' /var/www/html/admin/scripts/pi-hole/js/index.js
 sudo rpl --encoding UTF-8 'Top Blocked Domains' 'Am meisten geblockte Domains' /var/www/html/admin/index.php
 sudo rpl --encoding UTF-8 'Top Clients \(total\)' 'Top Geräte (insgesamt)' /var/www/html/admin/index.php
@@ -319,8 +319,8 @@ sudo rpl --encoding UTF-8 'applyLabel:"Apply"' 'applyLabel:"Anwenden"' /var/www/
 sudo rpl --encoding UTF-8 'Queries over the selected time period' 'Anfragen über den ausgewählten Zeitraum' /var/www/html/admin/db_graph.php
 
 # die folgenden zwei Zeilen dürfen in der Reihenfolge nicht vertauscht werden
-sudo rpl --encoding UTF-8 'Queries from " + fromTime + " to " + untilTime + " on " + fromDate' 'Anfragen von " + fromTime + " Uhr bis " + untilTime + " Uhr am " + fromDate' /var/www/html/admin/scripts/pi-hole/js/db_graph.js
-sudo rpl --encoding UTF-8 '"Queries from " +' '"Anfragen von " +' /var/www/html/admin/scripts/pi-hole/js/db_graph.js
+sudo rpl --encoding UTF-8 'Queries from " \+ fromTime \+ " to " \+ untilTime \+ " on " \+ fromDate' 'Anfragen von " + fromTime + " Uhr bis " + untilTime + " Uhr am " + fromDate' /var/www/html/admin/scripts/pi-hole/js/db_graph.js
+sudo rpl --encoding UTF-8 '"Queries from " \+' '"Anfragen von " +' /var/www/html/admin/scripts/pi-hole/js/db_graph.js
 
 sudo rpl --encoding UTF-8 '"Permitted DNS Queries' '"Erlaubte DNS Anfragen' /var/www/html/admin/scripts/pi-hole/js/db_graph.js
 sudo rpl --encoding UTF-8 '"Blocked DNS Queries' '"Geblockte DNS Anfragen' /var/www/html/admin/scripts/pi-hole/js/db_graph.js
@@ -409,8 +409,8 @@ sudo rpl --encoding UTF-8 'Description \(optional\)' 'Beschreibung (optional)' /
 sudo rpl --encoding UTF-8 'Add domain as wildcard' 'Domain als Platzhalter hinzufügen' /var/www/html/admin/groups-domains.php
 sudo rpl --encoding UTF-8 'Check this box if you want to involve all subdomains. The entered domain will be converted to a RegEx filter while adding.' 'Markieren Sie dieses Feld, wenn Sie alle Unterdomänen einbeziehen möchten. Die eingegebene Domäne wird beim Hinzufügen in einen RegEx-Filter umgewandelt.' /var/www/html/admin/groups-domains.php
 sudo rpl --encoding UTF-8 'Add to Whitelist</button>' 'Zur Whitelist hinzufügen</button>' /var/www/html/admin/groups-domains.php
-sudo rpl --encoding UTF-8 'utils.showAlert\("warning", "", "Warning", "Please specify a " + domainRegex\)' 'utils.showAlert("warning", "", "Achtung!", "Bitte geben Sie eine Domain ein!")' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
-sudo rpl --encoding UTF-8 'utils.showAlert("info", "", "Adding " + domainRegex + "...", domain\);' 'utils.showAlert("info", "", "Füge die Domain hinzu ...", domain);' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
+sudo rpl --encoding UTF-8 'utils.showAlert\("warning", "", "Warning", "Please specify a " \+ domainRegex\)' 'utils.showAlert("warning", "", "Achtung!", "Bitte geben Sie eine Domain ein!")' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
+sudo rpl --encoding UTF-8 'utils.showAlert("info", "", "Adding " \+ domainRegex \+ "...", domain\);' 'utils.showAlert("info", "", "Füge die Domain hinzu ...", domain);' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
 sudo rpl --encoding UTF-8 'utils.showAlert\("success", "fas fa-plus", "Success!", response.message\);' 'utils.showAlert("success", "fas fa-plus", "Domain erfolgreich hinzugefügt!", response.message);' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
 sudo rpl --encoding UTF-8 '"Not adding ". htmlentities\(utf8_encode\(\$domain\)\) . " as it is already on the list"' '"Nicht hinzugefügt, da der Eintrag ". htmlentities(utf8_encode($domain)) . " bereits in der Liste enthalten ist."' /var/www/html/admin/scripts/pi-hole/php/groups.php
 sudo rpl --encoding UTF-8 '<strong>Error, something went wrong!</strong>' '<strong>Fehler, etwas ist schief gelaufen!</strong>' /var/www/html/admin/scripts/pi-hole/js/utils.js
@@ -434,8 +434,8 @@ sudo rpl --encoding UTF-8 '10, 25, 50, 100, "All"' '10, 25, 50, 100, "Alle"' /va
 sudo rpl --encoding UTF-8 '<th>Comment</th>' '<th>Kommentar</th>' /var/www/html/admin/groups-domains.php
 sudo rpl --encoding UTF-8 '">Exact whitelist</option>' '">Exakte Whitelist</option>' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
 sudo rpl --encoding UTF-8 '>Regex whitelist</option>' '>RegEx Whitelist</option>' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
-sudo rpl --encoding UTF-8 'utils.showAlert\("info", "", "Editing " + domainRegex + "...", name' 'utils.showAlert("info", "", "Bearbeite die Domain ..." , name' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
-sudo rpl --encoding UTF-8 '"Successfully " + done + " " + domainRegex' '"Domain erfolgreich bearbeitet! "' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
+sudo rpl --encoding UTF-8 'utils.showAlert\("info", "", "Editing " \+ domainRegex \+ "...", name' 'utils.showAlert("info", "", "Bearbeite die Domain ..." , name' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
+sudo rpl --encoding UTF-8 '"Successfully " \+ done \+ " " \+ domainRegex' '"Domain erfolgreich bearbeitet! "' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
 sudo rpl --encoding UTF-8 'Session expired! Please re-login on the Pi-hole dashboard.' 'Die Sitzung ist abgelaufen! Bitte melden Sie sich erneut auf dem Dashboard des Pi-hole an.' /var/www/html/admin/scripts/pi-hole/php/auth.php
 sudo rpl --encoding UTF-8 'Empty token! Check if cookies are enabled on your system.' 'Leeres Token! Prüfen Sie, ob Cookies auf Ihrem System aktiviert sind.' /var/www/html/admin/scripts/pi-hole/php/auth.php
 sudo rpl --encoding UTF-8 'Wrong token! Please re-login on the Pi-hole dashboard.' 'Falsches Token! Bitte loggen Sie sich erneut auf dem Pi-hole Hauptmenü ein.' /var/www/html/admin/scripts/pi-hole/php/auth.php
@@ -473,7 +473,7 @@ sudo rpl --encoding UTF-8 'nDatabase ID: ' 'nDatenbank ID: ' /var/www/html/admin
 sudo rpl --encoding UTF-8 'on: "Enabled"' 'on: "Aktiviert"' /var/www/html/admin/scripts/pi-hole/js/groups.js
 sudo rpl --encoding UTF-8 'off: "Disabled"' 'off: "Deaktiviert"' /var/www/html/admin/scripts/pi-hole/js/groups.js
 sudo rpl --encoding UTF-8 'Editing group...' 'Gruppe wird bearbeitet ...' /var/www/html/admin/scripts/pi-hole/js/groups.js
-sudo rpl --encoding UTF-8 'Successfully " + done + " group' 'Gruppe erfolgreich bearbeitet!' /var/www/html/admin/scripts/pi-hole/js/groups.js
+sudo rpl --encoding UTF-8 'Successfully " \+ done \+ " group' 'Gruppe erfolgreich bearbeitet!' /var/www/html/admin/scripts/pi-hole/js/groups.js
 sudo rpl --encoding UTF-8 'Deleting group...' 'Gruppe wird gelöscht ...' /var/www/html/admin/scripts/pi-hole/js/groups.js
 sudo rpl --encoding UTF-8 'Successfully deleted group ' 'Gruppe erfolgreich gelöscht!' /var/www/html/admin/scripts/pi-hole/js/groups.js
 sudo rpl --encoding UTF-8 'Reset sorting</button>' 'Sortierung zurücksetzen</button>' /var/www/html/admin/groups.php
@@ -512,7 +512,7 @@ sudo rpl --encoding UTF-8 'nLast modified:' 'nZuletzt bearbeitet am:' /var/www/h
 sudo rpl --encoding UTF-8 'nDatabase ID:' 'nDatenbank ID:' /var/www/html/admin/scripts/pi-hole/js/groups-clients.js
 sudo rpl --encoding UTF-8 'none selected' 'Es wird nichts geblockt!' /var/www/html/admin/scripts/pi-hole/js/utils.js
 sudo rpl --encoding UTF-8 'Editing client...' 'Gerät wird bearbeitet ...' /var/www/html/admin/scripts/pi-hole/js/groups-clients.js
-sudo rpl --encoding UTF-8 '"Successfully " + done + " client"' '"Gerät erfolgreich bearbeitet!"' /var/www/html/admin/scripts/pi-hole/js/groups-clients.js
+sudo rpl --encoding UTF-8 '"Successfully " \+ done \+ " client"' '"Gerät erfolgreich bearbeitet!"' /var/www/html/admin/scripts/pi-hole/js/groups-clients.js
 sudo rpl --encoding UTF-8 '>Apply</button>' '>Anwenden</button>' /var/www/html/admin/scripts/pi-hole/js/groups-clients.js
 sudo rpl --encoding UTF-8 'bsSelectDefaults.selectAllText = "All"' 'bsSelectDefaults.selectAllText = "Alle"' /var/www/html/admin/scripts/pi-hole/js/utils.js
 sudo rpl --encoding UTF-8 'bsSelectDefaults.deselectAllText = "None"' 'bsSelectDefaults.deselectAllText = "Keine"' /var/www/html/admin/scripts/pi-hole/js/utils.js
@@ -531,10 +531,10 @@ sudo rpl --encoding UTF-8 'Database ID:' 'Datenbank ID:' /var/www/html/admin/scr
 sudo rpl --encoding UTF-8 'on: "Enabled"' 'on: "Aktiviert"' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
 sudo rpl --encoding UTF-8 'off: "Disabled"' 'off: "Deaktiviert"' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
 sudo rpl --encoding UTF-8 'Apply</button>' 'Anwenden</button>' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
-sudo rpl --encoding UTF-8 'return "All selected \(" + num + "\)";' 'return "Alle ausgewählt (" + num + ")";' /var/www/html/admin/scripts/pi-hole/js/utils.js
-sudo rpl --encoding UTF-8 'return num + " selected"' 'return num + " ausgewählt"' /var/www/html/admin/scripts/pi-hole/js/utils.js
-sudo rpl --encoding UTF-8 'utils.showAlert\("info", "", "Deleting " + domainRegex + "...", domain\)' 'utils.showAlert("info", "", "Lösche die Domain ...", domain)' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
-sudo rpl --encoding UTF-8 '"Successfully deleted " + domainRegex,' '"Domain erfolgreich gelöscht!" ,' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
+sudo rpl --encoding UTF-8 'return "All selected \(" \+ num \+ "\)";' 'return "Alle ausgewählt (" + num + ")";' /var/www/html/admin/scripts/pi-hole/js/utils.js
+sudo rpl --encoding UTF-8 'return num \+ " selected"' 'return num \+ " ausgewählt"' /var/www/html/admin/scripts/pi-hole/js/utils.js
+sudo rpl --encoding UTF-8 'utils.showAlert\("info", "", "Deleting " \+ domainRegex \+ "...", domain\)' 'utils.showAlert("info", "", "Lösche die Domain ...", domain)' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
+sudo rpl --encoding UTF-8 '"Successfully deleted " \+ domainRegex,' '"Domain erfolgreich gelöscht!" ,' /var/www/html/admin/scripts/pi-hole/js/groups-domains.js
 sudo rpl --encoding UTF-8 'Reset sorting</button>' 'Sortierung zurücksetzen</button>' /var/www/html/admin/groups-domains.php
 
 
@@ -594,7 +594,7 @@ sudo rpl --encoding UTF-8 '<td>Database ID of this list:</td>' '<td>Datenbank-ID
 sudo rpl --encoding UTF-8 'on: "Enabled"' 'on: "Aktiviert"' /var/www/html/admin/scripts/pi-hole/js/groups-adlists.js
 sudo rpl --encoding UTF-8 'off: "Disabled"' 'off: "Deaktiviert"' /var/www/html/admin/scripts/pi-hole/js/groups-adlists.js
 sudo rpl --encoding UTF-8 'Editing adlist...' 'Bearbeite die Blockliste ...' /var/www/html/admin/scripts/pi-hole/js/groups-adlists.js
-sudo rpl --encoding UTF-8 'Successfully " + done + " adlist ' 'Blockliste erfolgreich bearbeitet!' /var/www/html/admin/scripts/pi-hole/js/groups-adlists.js
+sudo rpl --encoding UTF-8 'Successfully " \+ done \+ " adlist ' 'Blockliste erfolgreich bearbeitet!' /var/www/html/admin/scripts/pi-hole/js/groups-adlists.js
 sudo rpl --encoding UTF-8 'Apply</button>' 'Anwenden</button>' /var/www/html/admin/scripts/pi-hole/js/groups-adlists.js
 sudo rpl --encoding UTF-8 'Deleting adlist...' 'Lösche die Blockliste ...' /var/www/html/admin/scripts/pi-hole/js/groups-adlists.js
 sudo rpl --encoding UTF-8 'Successfully deleted adlist' 'Blockliste erfolgreich gelöscht.' /var/www/html/admin/scripts/pi-hole/js/groups-adlists.js
@@ -943,7 +943,7 @@ sudo rpl --encoding UTF-8 'Pi-hole domain name' 'Pi-hole Domänenname' /var/www/
 sudo rpl --encoding UTF-8 'DHCP lease time' 'DHCP Leasingzeit' /var/www/html/admin/settings.php
 sudo rpl --encoding UTF-8 'Lease time in hours' 'Leasingzeit in Stunden' /var/www/html/admin/settings.php
 sudo rpl --encoding UTF-8 'Hint: 0 = infinite, 24 = one day, 168 = one week, 744 = one month, 8760 = one year' 'Hinweis: 0 = unendlich, 24 = ein Tag, 168 = eine Woche, 744 = ein Monat, 8760 = ein Jahr' /var/www/html/admin/settings.php
-sudo rpl --encoding UTF-8 'Enable IPv6 support \(SLAAC + RA\)' 'Aktiviere IPv6 Unterstützung (SLAAC + RA)' /var/www/html/admin/settings.php
+sudo rpl --encoding UTF-8 'Enable IPv6 support \(SLAAC \+ RA\)' 'Aktiviere IPv6 Unterstützung (SLAAC + RA)' /var/www/html/admin/settings.php
 sudo rpl --encoding UTF-8 '<strong>Enable DHCPv4 rapid commit \(fast address assignment\)</strong>' '<strong>Aktiviere DHCPv4 Schnellübertragung (schnelle Adresszuweisung)</strong>' /var/www/html/admin/settings.php
 sudo rpl --encoding UTF-8 'Currently active DHCP leases</h3>' 'Derzeitig aktive DHCP Leases</h3>' /var/www/html/admin/settings.php
 sudo rpl --encoding UTF-8 '<th>MAC address</th>' '<th>MAC Addresse</th>' /var/www/html/admin/settings.php
